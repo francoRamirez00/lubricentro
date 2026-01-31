@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #ddd;
+    overflow-x: hidden; /* Evita desplazamiento horizontal no deseado */
+    
+}
+
+h1 {
+    font-size: 2.7em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3{ font-size: 1.5em;
+}
+
+h4{font-size: 1em;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.button__container .btn {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgb(228, 26, 26);
+    padding: 16px 33px;
+    border-radius: 10px;
+    border: 1px solid #0007;
+    box-shadow: 2px 2px 10px #0007;
+    color: white;
+}
+
+.button__container .btn:hover{
+    background-color: rgb(138, 21, 21);
+    cursor: pointer;
+}
+
+.container {
+
+    margin: auto;
+}
+
+
+/*   ---- HEADER ----*/
+.header{
+    color: #fff;
+    background-image: linear-gradient(0deg, #0004, #bbb), url(../img/mostrador-cb74b651.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 30vh;
+}
+
+
+.header__container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 20vh;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    
+}
+
+
+.header__logo{
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.header__nav{
+    
+    justify-self: center;
+}
+.nav__list {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.header__nav .nav__list li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav__list-item a {
+    color: #ddd;
+    font-size: 1.2em;
+    text-decoration:none ;
+}
+.nav__list-item a:hover {
+    background-color: rgb(228, 26, 26);
+    color: #ddd;
+    padding: 7px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.usuario-carrito {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* separación entre usuario y carrito */
+}
+
+/* Botones */
+.usuario button,
+.carrito button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.search-form {
+    display: flex; /* Alinea los elementos en línea */
+    align-items: center; /* Centra verticalmente el input y el botón */
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.search-form input {
+    padding: 5px;
+    border: none; /* Quita el borde */
+    border-radius: 4px 0 0 4px; /* Bordes redondeados en la izquierda */
+    background-color: transparent;
+    border-bottom: 3px solid rgb(228, 26, 26);
+    width: 40%;
+    color: #ddd;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    border: none; /* Quita el borde */
+    border-radius: 0 4px 4px 0; /* Bordes redondeados en la derecha */
+    background-color: transparent;/* Color de fondo del botón */
+    color: #ccc; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-bottom: 3px solid rgb(228, 26, 26);
+}
+
+.search-form button:hover {
+    background-color: rgb(228, 26, 26); /* Color de fondo del botón al pasar el cursor */
+}
+
+.search-form input:focus{
+    outline: none;
+
+}
+
+
+/* Main container */
+
+.main{
+    /*background-image: url(/img/Como-habilitar-un-lubricentro-en-Buenos-Aires-3.jpg);*/
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    backdrop-filter: blur(10px);
+}
+.container__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #ddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container__main p{
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+}
+
+.container__producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 18rem;
+    min-height: 420px; /* Ajusta según tu diseño */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* MISMA ALTURA PARA TODAS */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+    padding: 10px;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 1rem;
+    min-height: 40px; /* Altura fija para títulos */
+} 
+
+.card-text {
+    min-height: 60px; /* Para que las descripciones no rompan el diseño */
+}
+.main h2{
+    font-size: 3em;
+    padding: 20px;
+    color: #030303;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+#footer__social a{
+    text-decoration: none;
+}
+
