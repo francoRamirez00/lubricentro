@@ -136,9 +136,7 @@ include 'conexion.php';
                         <p>
                             <a href="#!" class="text-reset">Grasas</a>
                         </p>
-                        <p>
-                            <a href="#!" class="text-reset">Laravel</a>
-                        </p>
+
                     </div>
                     <!-- Grid column -->
 
