@@ -63,7 +63,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 30vh;
+    height: 16vh;
 }
 
 
@@ -71,7 +71,7 @@ a {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    height: 20vh;
+    height: 16vh;
 
     max-width: 1200px;
     margin: 0 auto;

@@ -58,12 +58,13 @@ a {
 
 /*   ---- HEADER ----*/
 .header{
-    color: #fff;
-    background-image: linear-gradient(0deg, #0004, #bbb);
-    background-repeat: no-repeat;
+    height: 16vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../img/header2.png");
     background-size: cover;
-    background-position: center center;
-    height: 14vh;
+    background-position: center;
+    color: #fff;
 }
 
 
@@ -71,7 +72,7 @@ a {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    height: 14vh;
+    height: 16vh;
 
     max-width: 1200px;
     margin: 0 auto;
@@ -199,8 +200,6 @@ a {
 }
 
 .card img {
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
     height: 220px;
     object-fit: cover;
 }
