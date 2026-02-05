@@ -82,7 +82,7 @@ session_start();
 
             </ul>
             <form class="button__container">
-                <a href="./contacto/contacto.html">Mas info</a>
+                <a href="./contacto/contacto.php">Mas info</a>
             </form>
         </div>
 

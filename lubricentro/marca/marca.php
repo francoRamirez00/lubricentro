@@ -114,7 +114,7 @@ session_start();
                     <!-- Grid column -->
                     <div class="col-md-2 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
-                        <a href="index.html"><img class="header__logo" src="../img/el-piojo-logo-tp.png"></a>
+                        <a href="../index.php"><img class="header__logo" src="../img/el-piojo-logo-tp.png"></a>
 
                     </div>
                     <!-- Grid column -->
@@ -166,7 +166,7 @@ session_start();
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgb(228, 26, 26);">
             © 2025 Copyright:
-            <a class="text-reset fw-bold" href="./index.html">Elpiojolubricantes.com</a>
+            <a class="text-reset fw-bold" href="./index.php">Elpiojolubricantes.com</a>
         </div>
         <!-- Copyright -->
     </footer>

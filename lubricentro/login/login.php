@@ -55,7 +55,7 @@ if (isset($_SESSION['error_login'])) {
             </form>
 
             <div class="extra">
-
+                <!-- <a href="#">¿Olvidaste tu contraseña?</a>  -->
                 <span>|</span>
                 <a href="../register/register.php">Registrarse</a>
                 <span>|</span>
