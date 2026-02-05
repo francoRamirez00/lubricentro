@@ -103,7 +103,9 @@ a {
     padding: 7px;
     transition: all 0.3s ease;
 }
-
+.icons span{
+    color: white;
+}
 .icons a {
     margin-left: 15px;
     color: white;

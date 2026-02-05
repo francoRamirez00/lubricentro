@@ -56,8 +56,8 @@ a {
 }
 
 
-/*   ---- HEADER ----*/
-.header{
+/* HEADER */
+.header {
     color: #fff;
     background-image: linear-gradient(0deg, #0004, #bbb), url(../img/mostrador-cb74b651.jpg);
     background-repeat: no-repeat;
@@ -66,113 +66,52 @@ a {
     height: 30vh;
 }
 
-
 .header__container {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    height: 20vh;
-
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 20px;
-
-    
-}
-
-
-
-.header__logo{
-    max-width: 150px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    flex: 1;
+    justify-content: space-between;
+    height: 16vh;
 }
 
-.header__nav{
-    
-    justify-self: center;
+.header__logo {
+    height: 120px;
 }
-.nav__list {
+
+
+.nav {
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: #ff0000;
 }
 
 
-
-.header__nav .nav__list li{
-    display: inline-block;
-    padding: 0 20px;
-}
-.nav__list-item a {
-    color: #ddd;
-    font-size: 1.2em;
-    text-decoration:none ;
-}
-.nav__list-item a:hover {
-    background-color: rgb(228, 26, 26);
-    color: #ddd;
+.nav a:hover {
+    color: #ff0000; ;
+    background-color: #fdfdfd;
     padding: 7px;
-    border-radius: 5px;
     transition: all 0.3s ease;
 }
-
-.carrito {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 190px 0 0px;
+.icons span{
+    color: white;
 }
 
-.carrito button {
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
+.icons a {
+    margin-left: 15px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
 }
-
-
-.search-form {
-    display: flex; /* Alinea los elementos en línea */
-    align-items: center; /* Centra verticalmente el input y el botón */
-    justify-content: center;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    
-}
-
-.search-form input {
-    padding: 5px;
-    border: none; /* Quita el borde */
-    border-radius: 4px 0 0 4px; /* Bordes redondeados en la izquierda */
-    background-color: transparent;
-    border-bottom: 3px solid rgb(228, 26, 26);
-    width: 40%;
-    color: #ddd;
-}
-
-.search-form button {
-    padding: 5px 10px;
-    border: none; /* Quita el borde */
-    border-radius: 0 4px 4px 0; /* Bordes redondeados en la derecha */
-    background-color: transparent;/* Color de fondo del botón */
-    color: #ccc; /* Color del texto del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    border-bottom: 3px solid rgb(228, 26, 26);
-}
-
-.search-form button:hover {
-    background-color: rgb(228, 26, 26); /* Color de fondo del botón al pasar el cursor */
-}
-
-.search-form input:focus{
-    outline: none;
-
-}
-
 
 /* Main container */
 

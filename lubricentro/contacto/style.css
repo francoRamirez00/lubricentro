@@ -56,8 +56,8 @@ a {
 }
 
 
-/*   ---- HEADER ----*/
-.header{
+/* HEADER */
+.header {
     color: #fff;
     /*background-image: linear-gradient(0deg, #0004, #bbb), url(/img/Como-habilitar-un-lubricentro-en-Buenos-Aires-3.jpg);*)*/
     background-color: rgb(26, 26, 26);
@@ -67,66 +67,53 @@ a {
     height: 16vh;
 }
 
-
 .header__container {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    height: 16vh;
-
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 20px;
-
-    
-}
-
-
-.header__logo{
-    max-width: 150px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    flex: 1;
+    justify-content: space-between;
+    height: 16vh;
 }
 
-.header__nav{
-    
-    justify-self: center;
+.header__logo {
+    height: 120px;
 }
 
-.nav__list {
+
+.nav {
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: #ff0000;
 }
 
 
-
-.header__nav .nav__list li{
-    display: inline-block;
-    padding: 0 20px;
-}
-.nav__list-item a {
-    color: #ddd;
-    font-size: 1.2em;
-    text-decoration:none ;
-}
-.nav__list-item a:hover {
-    background-color: rgb(228, 26, 26);
-    color: #ddd;
+.nav a:hover {
+    color: #ff0000; ;
+    background-color: #fdfdfd;
     padding: 7px;
-    border-radius: 5px;
     transition: all 0.3s ease;
 }
-
-.usuario-carrito {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* separación entre usuario y carrito */
+.icons span{
+    color: white;
 }
+
+.icons a {
+    margin-left: 15px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
 
 /* Botones */
 .usuario button,

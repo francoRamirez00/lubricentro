@@ -44,47 +44,7 @@ $total = 0;
     <title>El Piojo Lubricentro</title>
 </head>
 
-<header class="header">
-    <div class="header__container">
-
-
-        <a href="../index.php"><img class="header__logo" src="../img/el-piojo-logo-tp.png"></a>
-        <nav class="header__nav">
-
-            <ul class="nav__list">
-                <li class="nav__list-item"><a href="../productos/productos.php">Productos</a></li>
-                <li class="nav__list-item"><a href="../Nosotros/nosotros.html">¿Quienes somos?</a></li>
-                <li class="nav__list-item"><a href="#">Marcas</a></li>
-                <li class="nav__list-item"><a href="../contacto/contacto.html">Contacto</a></li>
-
-            </ul>
-
-        </nav>
-
-        <div class="usuario-carrito">
-            <div class="usuario">
-                <a href="../login/login.php"><button>👤</button></a> <!-- Icono del carrito -->
-            </div>
-            <div class="carrito">
-                <a href="carrito.php"><button>🛒</button></a> <!-- Icono del carrito -->
-            </div>
-
-        </div>
-
-
-
-    </div>
-
-    <form action="#" method="GET" class="search-form">
-        <input type="text" placeholder="Buscar..." aria-label="Buscar">
-        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-            </svg></button>
-    </form>
-    <div class="container container__main">
-
-    </div>
-</header>
+<?php include "../header/header.php" ?>
 
 <body>
     <section class="container my-5">
