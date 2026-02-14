@@ -20,7 +20,7 @@ session_start();
 <body>
     <?php include "../header/header.php"; ?>
     <main class="main">
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad officia minima recusandae doloremque iste, amet odit, officiis ab quod tempore laborum similique possimus, autem accusamus animi quisquam? Illo, quo?
+        <p class="text">Somos un emprendimiento dedicado a ofrecer productos de calidad al mejor precio, enfocados en brindar una experiencia de compra simple, rápida y confiable.
 
         </p>
 
@@ -31,8 +31,8 @@ session_start();
                     <div class="card">
                         <img src="../img/auto-lubricenter.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Servicio de Mecánica</h5>
+                            <p class="card-text">Realizamos mantenimiento y reparaciones generales para que tu vehículo funcione siempre en óptimas condiciones.</p>
                         </div>
                     </div>
                 </div>
@@ -40,8 +40,8 @@ session_start();
                     <div class="card">
                         <img src="../img/empleado.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Atención Profesional</h5>
+                            <p class="card-text">Contamos con personal capacitado y herramientas adecuadas para brindarte un servicio seguro y confiable.</p>
                         </div>
                     </div>
                 </div>
@@ -49,8 +49,8 @@ session_start();
                     <div class="card">
                         <img src="../img/OIP.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">Cambio de Aceite</h5>
+                            <p class="card-text">Trabajamos con lubricantes de calidad para proteger y prolongar la vida útil de tu motor.</p>
                         </div>
                     </div>
                 </div>
@@ -58,8 +58,8 @@ session_start();
                     <div class="card">
                         <img src="../img/lubricentro-grm.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Venta de Productos</h5>
+                            <p class="card-text">Ofrecemos una amplia variedad de repuestos y productos automotores al mejor precio.</p>
                         </div>
                     </div>
                 </div>
