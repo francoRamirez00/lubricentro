@@ -24,7 +24,7 @@
 
         <div class="icons">
             <?php if (isset($_SESSION['usuario_email'])): ?>
-                <span>Hola, <?= $_SESSION['usuario_name'] ?></span>
+                <span>Hola, <?= htmlspecialchars($_SESSION['usuario_name']) ?></span>
                 <a href="../login/logout.php">Salir</a>
             <?php else: ?>
                 <a href="../login/login.php">Ingresar</a>

@@ -16,9 +16,17 @@ if (!empty($_POST["ingresar"])) {
         $user = $_POST["email"];
         $pass = $_POST["password"];
 
-        $sql = $conexion->query("SELECT * FROM usuario WHERE email = '$user' AND pass = '$pass'");
+        //  CONSULTA SEGURA
+        $stmt = $conexion->prepare("SELECT * FROM usuario WHERE email = ?");
+        $stmt->bind_param("s", $user);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $usuario = $result->fetch_assoc();
 
-        if ($usuario = $sql->fetch_assoc()) {
+        if ($usuario && password_verify($pass, $usuario['pass'])) {
+
+            session_regenerate_id(true);
+
             $_SESSION['usuario_email'] = $usuario['email'];
             $_SESSION['usuario_name'] = $usuario['nombre'];
             $_SESSION['usuario_id'] = $usuario['id'];

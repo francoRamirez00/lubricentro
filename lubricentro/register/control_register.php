@@ -19,10 +19,13 @@ if (!empty($_POST["crear"])) {
         $user_lastName = $_POST["Lastname"];
         $user_email = $_POST["email"];
         $tel = $_POST["Telefono"];
-        $user_pass = $_POST["password"];
+        $user_pass = password_hash($_POST["password"], PASSWORD_DEFAULT);
         // var_dump(($user_email));
-        $sql = $conexion->query("SELECT * FROM usuario WHERE email = '$user_email'");
-        $res = mysqli_fetch_assoc($sql);
+        $stmt = $conexion->prepare("SELECT id FROM usuario WHERE email = ?");
+        $stmt->bind_param("s", $user_email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $res = $result->fetch_assoc();
 
         if ($res) {
             $_SESSION['error_login'] = "El email ingresado ya existe.
